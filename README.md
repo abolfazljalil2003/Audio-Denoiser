@@ -4,6 +4,17 @@ A spectral-subtraction audio denoiser written in C++ with three implementations 
 
 On a 60-second, 44.1 kHz recording the CUDA version runs in 37.9 ms including memory transfers, 15.5x faster than the single-threaded CPU version, and its output matches the CPU output to within 5.96e-07.
 
+## Audio Samples
+
+| Noisy Input (Before Denoising) | Denoised Output (CUDA) |
+|:---:|:---:|
+| [▶ Listen to Noisy Audio](noisy.wav) | [▶ Listen to Denoised Audio](clean.wav) |
+| [⬇ Download WAV](noisy.wav) | [⬇ Download WAV](clean.wav) |
+
+##  Spectrogram
+
+![Clean, Noisy and Denoised Spectrogram](spectrogram.png)
+
 ## Results
 
 Test input: 60.00 s mono, 44100 Hz, 2,646,000 samples (synthetic tone + chirp with additive white noise).
