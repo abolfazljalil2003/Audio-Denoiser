@@ -7,7 +7,7 @@ On a 60-second, 44.1 kHz recording the CUDA version runs in 37.9 ms including me
 ## Results
 
 Test input: 60.00 s mono, 44100 Hz, 2,646,000 samples (synthetic tone + chirp with additive white noise).
-Environment: Google Colab GPU runtime, 2 CPU threads. GPU model: `<fill in from nvidia-smi>`.
+Environment: Google Colab GPU runtime, 2 CPU threads. GPU model: `Tesla T4`.
 Timings are from a single run.
 
 ### Performance
@@ -38,10 +38,6 @@ Samples are in the range [-1, 1]. The CUDA difference is at the level of single-
 
 ### Denoising quality
 
-| | SNR (dB) |
-|---|---|
-| Noisy input | `<fill in>` |
-| Denoised output | `<fill in>` |
 
 SNR is measured against the clean reference, excluding the first second.
 
